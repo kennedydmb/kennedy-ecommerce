@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-# import env
+#import env
 import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'products',
     'cart',
     'checkout',
-    'storages',
+    'storages'
 ]
 
 MIDDLEWARE = [
@@ -71,18 +71,18 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
-                'cart.contexts.cart_contents',
+                'cart.contexts.cart_contents'
             ],
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'ecommerce.wsgi.application'
 
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-
 
 if "DATABASE_URL" in os.environ:
     DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
@@ -94,6 +94,8 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
