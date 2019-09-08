@@ -33,3 +33,4 @@ stripe==2.35.1
 urllib3==1.25.3
 wrapt==1.11.2
 zope.interface==4.3.2
+gunicorn=19.9.0
