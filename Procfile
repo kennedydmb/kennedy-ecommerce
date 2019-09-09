@@ -1,1 +1,1 @@
-web: gunicorn kennedy-commerce.wsgi:application
+web: gunicorn ecommerce-site.wsgi:application

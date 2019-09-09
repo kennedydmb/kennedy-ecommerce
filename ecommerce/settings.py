@@ -78,7 +78,7 @@ TEMPLATES = [
 ]
 
 
-WSGI_APPLICATION = 'kennedy-commerce.wsgi.application'
+WSGI_APPLICATION = 'ecommerce-site.wsgi.application'
 
 
 # Database
